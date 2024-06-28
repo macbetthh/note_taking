@@ -11,11 +11,18 @@ Note Taking is a web application that allows users to write, save, and delete no
 ---
 
 ## Table of Contents
+- [Live Application](#liveapp)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
 - [License](#license)
 - [Credits](#credits)
+
+---
+
+## Live App
+
+You can access the deployed application [here](https://note-taker-app-rkyx.onrender.com/). 
 
 ---
 
@@ -75,16 +82,11 @@ Open your browser and navigate to http://localhost:3000.
 
 ## Screenshots
 
+#Video showing functionality on the deployed page
+
+https://github.com/macbetthh/note_taking/assets/143623621/1c2e345c-471c-4296-9dcc-d89ddbe28a52
 
 
-https://github.com/macbetthh/readme_wizard/assets/143623621/88a75c4b-41e5-45a2-b92a-088e539c9f16
-
-
-
-Alternate video link (not as speedy) &rarr; &rarr; [click me](https://new.express.adobe.com/published/urn:aaid:sc:US:adcd9715-5df8-4466-9679-d6719b8d1108?promoid=Y69SGM5H&mv=other)
-
-
-![generated_readme_example](https://github.com/macbetthh/readme_wizard/assets/143623621/f6531b3a-c482-4c2f-86b5-0f5344bffd1b)
 
 
 ---
