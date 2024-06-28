@@ -102,12 +102,3 @@ This project is licensed under the MIT license.
 - [Node.js](https://nodejs.org/en/download/package-manager)
 - [Express.js](https://expressjs.com/)
 
-
-
-
-
----
-
-🪄 _This README was generated with ❤️ and a touch of magic by ReadMe Wizard_ ✨
-
-_~Ps.~ ~well,~ ~kind~ ~of~ ~because~ ~I~ ~took~ ~out~ ~some~ ~sections~ ~and~ ~added~ ~my~ ~own~ ~markdown~ ~to~ ~other~ ~sections~ ~after~ ~generating~_ 😇
