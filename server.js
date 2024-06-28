@@ -24,47 +24,44 @@ app.get('/api/notes', (req, res) => {
   fs.readFile(path.join(__dirname, 'db', 'db.json'), 'utf8', (err, data) => {
     if (err) {
       console.error(err);
-      return res.status(500).send('An error occurred while reading the file.');
+      return res.status(500).json({ error: 'Failed to read notes' });
     }
-    res.json(JSON.parse(data));  // Ensure the response is JSON
+    res.json(JSON.parse(data));
   });
 });
 
 app.post('/api/notes', (req, res) => {
   const newNote = { ...req.body, id: uuidv4() };
-  console.log('Received new note:', req.body);  // Debug log
   fs.readFile(path.join(__dirname, 'db', 'db.json'), 'utf8', (err, data) => {
     if (err) {
       console.error(err);
-      return res.status(500).send('An error occurred while reading the file.');
+      return res.status(500).json({ error: 'Failed to read notes' });
     }
     const notes = JSON.parse(data);
     notes.push(newNote);
     fs.writeFile(path.join(__dirname, 'db', 'db.json'), JSON.stringify(notes, null, 2), (err) => {
       if (err) {
         console.error(err);
-        return res.status(500).send('An error occurred while writing to the file.');
+        return res.status(500).json({ error: 'Failed to save note' });
       }
-      console.log('New note saved:', newNote);
-      res.json(newNote);  // Ensure the response is JSON
+      res.json(newNote);
     });
   });
 });
 
-// Bonus: DELETE route
 app.delete('/api/notes/:id', (req, res) => {
   const { id } = req.params;
   fs.readFile(path.join(__dirname, 'db', 'db.json'), 'utf8', (err, data) => {
     if (err) {
       console.error(err);
-      return res.status(500).send('An error occurred while reading the file.');
+      return res.status(500).json({ error: 'Failed to read notes' });
     }
     let notes = JSON.parse(data);
     notes = notes.filter(note => note.id !== id);
     fs.writeFile(path.join(__dirname, 'db', 'db.json'), JSON.stringify(notes, null, 2), (err) => {
       if (err) {
         console.error(err);
-        return res.status(500).send('An error occurred while writing to the file.');
+        return res.status(500).json({ error: 'Failed to delete note' });
       }
       res.status(204).send();
     });
