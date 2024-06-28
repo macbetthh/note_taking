@@ -11,7 +11,7 @@ Note Taking is a web application that allows users to write, save, and delete no
 ---
 
 ## Table of Contents
-- [Live Application](#live)
+- [Application](#application)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
@@ -20,10 +20,10 @@ Note Taking is a web application that allows users to write, save, and delete no
 
 ---
 
-## Live App
+## Application
 
 You can access the deployed application [here](https://note-taker-app-rkyx.onrender.com/). 
-
+&nbsp;
 ---
 
 ## Installation
