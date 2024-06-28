@@ -1,12 +1,12 @@
-# 📝Note Taking
+# 📝Note Taking App
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ---
 
 ## Description
-##### ✨Note Taker: Organize Your Thoughts with Ease✨
+##### ✨Note Taking: Organize Your Thoughts with Ease✨
 
-Note Taker is a web application that allows users to write, save, and delete notes. It's perfect for small business owners and individuals who need to keep track of tasks and organize their thoughts. Built with Express.js, this application provides a seamless experience for managing your notes.
+Note Taking is a web application that allows users to write, save, and delete notes. It's perfect for small business owners and individuals who need to keep track of tasks and organize their thoughts. Built with Express.js, this application provides a seamless experience for managing your notes.
 
 ---
 
@@ -21,7 +21,7 @@ Note Taker is a web application that allows users to write, save, and delete not
 
 ## Installation
 
-To use this Note Taker application, you'll need to have [Node.js](https://nodejs.org/en/download/package-manager) installed on your machine. If you don't need set-up help, move on to [Usage](#usage) for functionality. 
+To use this Note Taking application, you'll need to have [Node.js](https://nodejs.org/en/download/package-manager) installed on your machine. If you don't need set-up help, move on to [Usage](#usage) for functionality. 
 
 Follow these steps to set up the project:
 
