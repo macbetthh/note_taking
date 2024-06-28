@@ -99,7 +99,6 @@ This project is licensed under the MIT license.
 - Developer: &nbsp; me 💁🏼‍♀️
 &nbsp;
 - [Starter code](https://github.com/coding-boot-camp/miniature-eureka)
-- License Badges - [Shields.io](https://shields.io/)
 - [Node.js](https://nodejs.org/en/download/package-manager)
 - [Express.js](https://expressjs.com/)
 
