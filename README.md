@@ -57,7 +57,7 @@ Follow these steps to use the Note Taker application:
    ```bash
    node index.js
 &nbsp;
-**
+
 2. **Open the Application:**
 &nbsp;
 Open your browser and navigate to http://localhost:3000.
@@ -70,7 +70,7 @@ Open your browser and navigate to http://localhost:3000.
  - Click on an existing note to view it.
  - Click the "New Note" button to create a new note.
  - Click the trash icon to delete a note.
-
+&nbsp;
 ---
 
 ## Screenshots
