@@ -15,25 +15,24 @@ app.get('/notes', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'notes.html'));
 });
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // API Routes
 app.get('/api/notes', (req, res) => {
-    fs.readFile(path.join(__dirname, 'db', 'db.json'), 'utf8', (err, data) => {
-      if (err) {
-        console.error(err);
-        return res.status(500).send('An error occurred while reading the file.');
-      }
-      res.json(JSON.parse(data)); 
-    });
+  fs.readFile(path.join(__dirname, 'db', 'db.json'), 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).send('An error occurred while reading the file.');
+    }
+    res.json(JSON.parse(data));  // Ensure the response is JSON
   });
-  
+});
 
 app.post('/api/notes', (req, res) => {
   const newNote = { ...req.body, id: uuidv4() };
-  console.log('Received new note:', req.body); 
+  console.log('Received new note:', req.body);  // Debug log
   fs.readFile(path.join(__dirname, 'db', 'db.json'), 'utf8', (err, data) => {
     if (err) {
       console.error(err);
@@ -46,14 +45,13 @@ app.post('/api/notes', (req, res) => {
         console.error(err);
         return res.status(500).send('An error occurred while writing to the file.');
       }
-      console.log('New note saved:', newNote); 
-      res.json(newNote);
+      console.log('New note saved:', newNote);
+      res.json(newNote);  // Ensure the response is JSON
     });
   });
 });
 
-
-// Bonus criteria attempt to delete route
+// Bonus: DELETE route
 app.delete('/api/notes/:id', (req, res) => {
   const { id } = req.params;
   fs.readFile(path.join(__dirname, 'db', 'db.json'), 'utf8', (err, data) => {
