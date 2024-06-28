@@ -11,7 +11,7 @@ Note Taking is a web application that allows users to write, save, and delete no
 ---
 
 ## Table of Contents
-- [Live Application](#liveapp)
+- [Live Application](#live)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
